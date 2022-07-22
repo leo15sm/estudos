@@ -1,11 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <title>Estudo</title>
 </head>
 <body>
+    <header>
+        <img src="./components/images/imagen-1.png" alt="galaxy">
+    </header>
+    
+    <nav>
+        <div id="title">
+            <h1>Titulo 1</h1>
+            <h1 id="teste">Titulo 2</h1>
+        </div>
 
+        <ul><!-- Lista ordenada -->
+            <a href="#"><li> Inicio </li></a>
+            <a href="#"><li> Serviços </li></a>
+            <a href="#"><li> Sobre </li></a>
+            <a href="#"><li> Contato </li></a>
+            <a href="#" class="inscrever"><li> Ja tem uma conta? </li></a>
+        </ul>
+    </nav>
+    
+    
+    <main> <!-- Div semântica que define o conteudo principal do site -->
+        <aside> <!-- Div semântica que define colulas que tangenciam o conteudo -->
+            <h2><span>Texto 1</span></h2>
+            <h2>Texto 2</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, maxime ab. Est at, laboriosam neque dolore id, nemo saepe animi et ab sapiente maxime ipsam, voluptatem assumenda. Eligendi, earum possimus?
+            </p>
+            <form action="get">
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="E-mail">
+                <input type="submit" value="Enviar >">
+            </form>
+        </aside>
+        <article> <!-- Div semântica para imagens -->
+            <img src="./components/images/imagen-2.png" alt="universe">
+        </article>
+    </main>
+
+    <footer>
+            <p >&copy; 2022 - Teste</p>
+    </footer>
 </body>
 </html>

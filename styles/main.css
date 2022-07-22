@@ -1,0 +1,58 @@
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+aside{
+    text-align: center;
+    margin: 0 auto;
+}
+
+main h2{
+    font-size: 50px;
+    line-height: 10px;
+}
+
+main p{
+    max-width: 500px;
+    font-family: love;
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 0.1em;
+    text-align: justify;
+}
+
+img{
+    width: 600px;
+    height: 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    align-self: center;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+}

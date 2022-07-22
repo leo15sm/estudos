@@ -1,0 +1,29 @@
+@font-face {
+    font-family: popins;
+    src: url(../components/fonts/poppins-regular-webfont.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: austria;
+    src: url(../components/fonts/Austria.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: midorima;
+    src: url(../components/fonts/Midorima-PersonalUse-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: love;
+    src: url(../components/fonts/LoveChristabelaRegular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*CTRL + D: seleciona todos os textos iguais*/
