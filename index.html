@@ -5,53 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/fonts.css">
     <link rel="stylesheet" href="./styles/media.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/produtos.css">
+    <link rel="stylesheet" href="./styles/sobre.css">
+    
     <title>Estudo</title>
 </head>
 <body>
-    <header>
-        <img src="./components/images/imagen-1.png" alt="galaxy">
-    </header>
-    
-    <nav>
-        <div id="title">
+    <nav id="nav">
+        <asside>
             <h1>Titulo 1</h1>
-            <h1 id="teste">Titulo 2</h1>
-        </div>
+            <h1>Titulo 2</h1>
+        </asside>
 
+        <div id="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        
         <ul><!-- Lista ordenada -->
-            <a href="#"><li> Inicio </li></a>
-            <a href="#"><li> Serviços </li></a>
-            <a href="#"><li> Sobre </li></a>
+            <a href="#home"><li> Inicio </li></a>
+            <a href="#produtos"><li> Produtos </li></a>
+            <a href="#sobre"><li> Sobre </li></a>
             <a href="#"><li> Contato </li></a>
             <a href="#" class="inscrever"><li> Ja tem uma conta? </li></a>
         </ul>
     </nav>
     
+    <header id="home">
+        <img src="./components/images/imagen-1.png" alt="galaxy">
+    </header>
     
-    <main> <!-- Div semântica que define o conteudo principal do site -->
-        <aside> <!-- Div semântica que define colulas que tangenciam o conteudo -->
-            <h2><span>Texto 1</span></h2>
-            <h2>Texto 2</h2>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, maxime ab. Est at, laboriosam neque dolore id, nemo saepe animi et ab sapiente maxime ipsam, voluptatem assumenda. Eligendi, earum possimus?
-            </p>
-            <form action="get">
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="E-mail">
-                <input type="submit" value="Enviar >">
-            </form>
-        </aside>
-        <article> <!-- Div semântica para imagens -->
-            <img src="./components/images/imagen-2.png" alt="universe">
-        </article>
+    <main> 
+        <section id="produtos">
+            <h1 class="title">Produtos</h1>
+
+            <figure>
+                <img src="./components/images/imagen-2.png" alt="produto1" id="prod1">
+                <figcaption>Produto 1</figcaption>
+            </figure>
+
+            <figure>
+                <img src="./components/images/imagen-2.png" alt="produto2" id="prod2">
+                <figcaption>Produto 2</figcaption>
+            </figure>
+
+            <figure>
+                <img src="./components/images/imagen-2.png" alt="produto3" id="prod3">
+                <figcaption>Produto 3</figcaption>
+            </figure>
+
+            <figure>
+                <img src="./components/images/imagen-2.png" alt="produto4" id="prod4">
+                <figcaption>Produto 4</figcaption>
+            </figure>
+
+            <figure>
+                <img src="./components/images/imagen-2.png" alt="produto5" id="prod5">
+                <figcaption>Produto 5</figcaption>
+            </figure>
+
+            <figure>
+                <img src="./components/images/imagen-2.png" alt="produto6" id="prod6">
+                <figcaption>Produto 6</figcaption>
+            </figure>
+        </section>
+
+        <section id="sobre">
+            <article>
+                <h2><span>Texto 1</span></h2>
+                <h2>Texto 2</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ea, maxime ab. Est at, laboriosam neque dolore id, nemo saepe 
+                    animi et ab sapiente maxime ipsam, voluptatem assumenda. Eligendi, earum possimus?
+                </p>
+                <form action="get">
+                    <input type="text" placeholder="Nome">
+                    <input type="email" placeholder="E-mail">
+                    <input type="submit" value="Enviar >">
+                </form>
+            </article>
+            
+            <figure class="img-desktop"> <!-- Div semântica para imagens -->
+                <img src="./components/images/imagen-3.png" alt="universe">
+            </figure>
+        </section>
     </main>
 
     <footer>
+        <div id="copy">
             <p >&copy; 2022 - Teste</p>
+        </div>
     </footer>
 </body>
 </html>
