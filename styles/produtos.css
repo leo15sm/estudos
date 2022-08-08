@@ -14,6 +14,11 @@
     padding-bottom: 50px;
 }
 
+#produtos img:hover{
+    transform: scale(1.5);
+    transition: 0.3s all;
+}
+
 #produtos img{
     width: 100%;
     height: 100%;
