@@ -18,13 +18,15 @@ nav{
     justify-content: space-between; /*Define um espaço entre os componentes*/
     align-items: center; /*Alinha os itens*/
     width: 100%;
-   
+    border: none;
+
     position: fixed;
     
-    /*
+}
+
+.active{
     background-image: linear-gradient(to top left,aqua, blueviolet, blue);
-    border: none;
-    */
+    /*opacity: 50%;*/
 }
 
 #logo{

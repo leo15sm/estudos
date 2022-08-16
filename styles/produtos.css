@@ -1,4 +1,5 @@
 #produtos{
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -15,7 +16,7 @@
 }
 
 #produtos img:hover{
-    transform: scale(1.5);
+    transform: scale(1.2);
     transition: 0.3s all;
 }
 
