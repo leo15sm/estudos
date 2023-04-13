@@ -1,38 +1,44 @@
-#produtos{
+#galeria{
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 75px;
     
     background-image: linear-gradient(to top left, black, rgb(65,105,225));
 
     overflow: hidden;
 }
 
-#produtos figure{
+#slide{
+    width: 1000px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid pink;
+}
+
+#galeria figure{
     width: 350px;
     height: 350px;
-    padding-bottom: 0.5em;
+    padding-bottom: 50px;
+    }
 
-    margin-left: 70px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-#produtos img:hover{
-    transform: scale(1.2);
-    transition: 0.3s all;
-}
-
-#produtos img{
+#galeria img{
     width: 100%;
     height: 100%;
 }
 
-#produtos figcaption{
+#galeria img:hover{
+    transform: scale(1.2);
+    transition: 0.3s all;
+}
+
+#galeria figcaption{
     text-align: center;
     font-size: 30px;
     font-family: love;
     letter-spacing: 0.1em;
-    margin-top: -50px;
 }

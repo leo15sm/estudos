@@ -3,14 +3,25 @@ header{
     display: flex;
     flex-direction: column-reverse; /*Define o fluxo em linha*/
     width: 100%;
-    height: 400px;
-    margin: 0;
+    height: 100%;
+    
+    min-height: 400px;
+    max-height: 450px;
+    /*
+    background-image: url("../components/images/01.jpg");
+    background-size: 100%;
+    */
+
+    border: 1px solid blue;
 }
 
-header img{
+header figure img{
     width: 100%;
     height: 100%;
+   
+    border: 1px solid red;
 }
+
 
 nav{
     display: flex;
@@ -21,12 +32,7 @@ nav{
     border: none;
 
     position: fixed;
-    
-}
-
-.active{
-    background-image: linear-gradient(to top left,aqua, blueviolet, blue);
-    /*opacity: 50%;*/
+    z-index: 10;
 }
 
 #logo{
@@ -71,14 +77,9 @@ a:hover{
     transition: 0.3s all;
 }
 
-#mobile-menu{
-    display: none;
-    cursor: pointer;
-}
+.active{
+    opacity: 90%;
+    background: blueviolet;
 
-#mobile-menu div{
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
+    /*background-image: linear-gradient(to top left,aqua, blueviolet, blue);*/
 }

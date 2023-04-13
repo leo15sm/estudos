@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/produtos.css">
     <link rel="stylesheet" href="./styles/sobre.css">
-    
+    <link rel="stylesheet" href="./styles/galeria.css">
     
     <title>Estudo</title>
+
 </head>
 <body>
     <nav id="nav">
@@ -26,19 +27,23 @@
             <a href="#home"><li> Inicio </li></a>
             <a href="#produtos"><li> Produtos </li></a>
             <a href="#sobre"><li> Sobre </li></a>
-            <a href="#"><li> Contato </li></a>
+            <a href="#footer"><li> Contato </li></a>
             <a href="#" class="inscrever"><li> Ja tem uma conta? </li></a>
         </ul>
     </nav>
     
-    <header id="home">
-        <img src="./components/images/imagen-1.png" alt="galaxy">
+    <header id="home"> 
+        <figure>
+            <img src="./components/images/01.jpg" alt="galaxy">
+        </figure>
     </header>
+    
     
     <main> 
         <section id="produtos">
-            <h1 class="title">Produtos</h1>
-
+            <aside class="title">
+                <h1>Produtos</h1>
+            </aside>
             <figure>
                 <img src="./components/images/imagen-2.png" alt="produto1" id="prod1">
                 <figcaption>Produto 1</figcaption>
@@ -68,6 +73,7 @@
                 <img src="./components/images/imagen-2.png" alt="produto6" id="prod6">
                 <figcaption>Produto 6</figcaption>
             </figure>
+            
         </section>
 
         <section id="sobre">
@@ -90,9 +96,25 @@
                 <img src="./components/images/imagen-3.png" alt="universe">
             </figure>
         </section>
+        <section id="galeria">
+            <aside class="title">
+                <h1>Galeria</h1>
+            </aside>
+            
+            <div id="slide">
+                <figure>
+                    <img src="./components/images/01.jpg" alt="produto1" id="prod1">
+                    <figcaption>Imagem 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="./components/images/02.jpg" alt="produto1" id="prod1">
+                    <figcaption>Imagem 2</figcaption>
+                </figure>
+            </div>    
+        </section>
     </main>
 
-    <footer>
+    <footer id="footer">
         <div id="copy">
             <p>&copy; 2022 - Teste</p>
         </div>
