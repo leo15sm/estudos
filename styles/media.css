@@ -8,23 +8,24 @@
    }
 
    h2{
-    font-size: 38px;
+      font-size: 38px;
    }
 
    form{
-    margin: 0 auto;
+      margin: 0 auto;
    }
 
    input{
-    width: 100%;
-    align-self: center;
+      width: 100%;
+      align-self: center;
    }
 
    .img-desktop{
-    display: none;
+      display: none;
    }
 
    ul{
-    text-align: center;
+      text-align: center;
    }
+
 }
