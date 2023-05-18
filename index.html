@@ -12,16 +12,22 @@
 
 </head>
 <body>
-    <nav id="nav">
+    <nav>
         <div id="logo">
-            <h1>Titulo 1</h1>
-            <h1>Titulo 2</h1>
+            <a href="/">Titulo 1 <br> Titulo 2</a>
         </div>
         
-        <ul><!-- Lista ordenada -->
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+        <ul class="nav-list"><!-- Lista ordenada -->
             <a href="#home"><li> Inicio </li></a>
             <a href="#produtos"><li> Produtos </li></a>
             <a href="#sobre"><li> Sobre </li></a>
+            <a href="#galeria"><li> Galeria </li></a>
             <a href="#footer"><li> Contato </li></a>
             <a href="#" class="inscrever"><li> Ja tem uma conta? </li></a>
         </ul>
@@ -71,8 +77,7 @@
 
         <section id="sobre">
             <article>
-                <h2><span>Texto 1</span></h2>
-                <h2>Texto 2</h2>
+                <h2><span>Texto 1</span> <br> Texto 2</h2>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                     Ea, maxime ab. Est at, laboriosam neque dolore id, nemo saepe 
@@ -91,10 +96,10 @@
         </section>
         
         <section id="galeria">
- <!--       <aside class="title">
+            <aside class="title">
                 <h1>Galeria</h1>
             </aside>
--->       
+
             <figure>
                 <img src="./components/images/01.jpg" alt="galeria 1"> 
                 <img class="inativo" src="./components/images/02.jpg" alt="galeria 2">

@@ -10,6 +10,7 @@ body{
     font-family: popins;
     max-width: 1366px;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 html {
@@ -39,35 +40,36 @@ nav{
     
     width: 100%;
     max-width: 1366px;
+    height: 12vh;
 
     border: none;
     position: fixed;
-    z-index: 10;
+    z-index: 100;
 }
 
-#logo{
-    line-height: 10px;
-    font-weight: bold;
-    margin-left: 5em;
-}
-
-nav ul{
-    margin-right: 2em; 
-}
-
-nav li{
+#logo a{
     display: inline-block;
-    margin: 20px;
+    line-height: 25px;
+    font-size: 25px;
+    margin-left: 2em;
+    text-decoration: none;
 }
 
-nav span{
-    color: blueviolet;
+.nav-list{
+    display: flex;
+    padding-right: 2em; 
+    list-style: none;
+    
+}
+
+.nav-list li{  
+    padding: 10px;
 }
 
 a{
-    list-style: none;
     color: white;
     font-weight: bold;
+    text-decoration: none;
 }
 
 a:hover{
@@ -78,7 +80,7 @@ a:hover{
 .inscrever{
     border: 2px solid blueviolet;
     border-radius: 20px;
-    padding: 10px;
+    margin-top: -2px;
 }
 
 .inscrever:hover{
@@ -87,16 +89,59 @@ a:hover{
     transition: 0.3s all;
 }
 
-.active{
-    background-color: blueviolet;
-    opacity: 90%;
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+    margin-right: 25px;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.scroll-nav{
+    background-color: rgba(0,0,0,.7);
+}
+
+.nav-list.active{
+    transform: translateX(0);
+}
+
+.mobile-menu.active .line1{
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+.mobile-menu.active .line2{
+    opacity: 0;
+}
+.mobile-menu.active .line3{
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+nav.active{
+    background-color: rgba(0,0,0,.7);
+    transition: 0.6s all;
+ }
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px)
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0)
+    }
 }
 
 header{
     display: flex;
     flex-direction: column-reverse; /*Define o fluxo em linha*/  
     height: 100%;
-    max-height: 500px;
+    max-height: 600px;
 }
 
 main{ /*Produtos e Sobre*/
@@ -145,24 +190,29 @@ main{ /*Produtos e Sobre*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 5em;
+    
 }
 
 #sobre article{
     width: 50%;
     flex-direction: column;
     text-align: center;
-    padding: 0 75px;
+    padding: 5em 50px;
+}
+
+#sobre article p{
+    margin: 20px auto;
 }
 
 #sobre figure{
     width: 50%;
     height: auto;
-
 }
+
 #sobre figure img{
     width: 100%;
     height: auto;
+    transform: scale(1.5);
 }
 
 form{
@@ -188,6 +238,7 @@ form [type="submit"]{
     color: white;
     font-weight: bold;
     align-self: center;
+    z-index: 10;
 }
 
 form [type="submit"]:hover{
@@ -218,6 +269,8 @@ span{
 #galeria{
     width: 100%;
     overflow: hidden;
+    background-image: linear-gradient(to top left, black, rgb(65,105,225));
+    padding-bottom: 5em;
 }
 
 #galeria figure {
@@ -225,9 +278,11 @@ span{
 }
 
 #galeria figure img{
-    width: 100%;
+    width: 80%;
     height: auto;
     object-fit: cover;
+    border: 5px dotted white;
+    margin: 0 auto;
 }
 
 .inativo{
