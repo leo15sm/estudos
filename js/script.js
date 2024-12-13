@@ -1,6 +1,6 @@
-const nav = document.querySelector("nav");
+function scrollnav(){
+    const nav = document.querySelector("nav");
 
-function teste(){
     if (window.scrollY >= 50) {
         nav.classList.add('scroll-nav');
     }else{
@@ -8,7 +8,7 @@ function teste(){
     }
 }
 
-window.addEventListener("scroll", teste);
+window.addEventListener("scroll", scrollnav);
 
 /*############################################################################################*/
 class MobileNavbar{
@@ -22,6 +22,7 @@ class MobileNavbar{
         this.handleClick = this.handleClick.bind(this);
     }
     
+    //faz a animação de entrada e abertura de mobile-nav
     animateLinks(){
         this.navLinks.forEach((link, index) => {
             link.style.animation
@@ -31,7 +32,8 @@ class MobileNavbar{
                   }s`);
         });
     }
-
+    
+    //Evento de ativo ao clicar
     handleClick(){
         this.navList.classList.toggle(this.activeClass);
         this.mobileMenu.classList.toggle(this.activeClass);
@@ -39,10 +41,12 @@ class MobileNavbar{
         this.animateLinks();
     }
 
+    //cria o evento de click
     addClickEvent(){
         this.mobileMenu.addEventListener("click", this.handleClick);
     }
 
+    //verifica se houve click
     init(){
         if(this.mobileMenu){
             this.addClickEvent();
@@ -61,7 +65,7 @@ const mobileNavbar = new MobileNavbar(
 mobileNavbar.init();
 
 /*############################################################################################*/
-let time=5000; 
+let time=3000; //milisegundos 
 let index=0;
 const images = document.querySelectorAll("#galeria figure img");
 const max = images.length;

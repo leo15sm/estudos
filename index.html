@@ -4,17 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/normalize.css">
+    
+    <!-- iCONS DO GOOGLE -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- FOLHAS DE ESTILO -->
     <link rel="stylesheet" href="./styles/fonts.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/media.css"> 
+    
+    <!-- SCRIPTS JS -->
+    <script defer src="./js/script.js"></script>
+
     <title>Estudo</title>
 
 </head>
 <body>
     <nav>
         <div id="logo">
-            <a href="/">Titulo 1 <br> Titulo 2</a>
+            <a href="#home">
+                <i class="fa-solid fa-leaf"></i>
+            </a>
         </div>
         
         <div class="mobile-menu">
@@ -24,7 +37,6 @@
         </div>
 
         <ul class="nav-list"><!-- Lista ordenada -->
-            <a href="#home"><li> Inicio </li></a>
             <a href="#produtos"><li> Produtos </li></a>
             <a href="#sobre"><li> Sobre </li></a>
             <a href="#galeria"><li> Galeria </li></a>
@@ -83,6 +95,7 @@
                     Ea, maxime ab. Est at, laboriosam neque dolore id, nemo saepe 
                     animi et ab sapiente maxime ipsam, voluptatem assumenda. Eligendi, earum possimus?
                 </p>
+                
                 <form action="get">
                     <input type="text" placeholder="Nome" required>
                     <input type="email" placeholder="E-mail" required>
@@ -116,8 +129,6 @@
             <p>&copy; 2022 - Teste</p>
         </div>
     </footer>
-  
-    <script src="./js/script.js"></script>
     
 </body>
 </html>
